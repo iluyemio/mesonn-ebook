@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Bundles</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: sans-serif; background: #f5f5f5; padding: 2rem; }
+
+  .cards-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 16px;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .card {
+    background: #ffffff;
+    border: 0.5px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+  }
+
+  .card.featured { border: 2px solid #7F77DD; }
+
+  .badge {
+    display: inline-block;
+    background: #EEEDFE;
+    color: #3C3489;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-weight: 500;
+    width: fit-content;
+  }
+
+  .card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  .card-title { font-size: 15px; font-weight: 600; color: #111; }
+  .card-sub   { font-size: 12px; color: #777; margin-top: 2px; }
+
+  .divider { border: none; border-top: 0.5px solid #e0e0e0; }
+
+  .price { font-size: 28px; font-weight: 600; color: #111; }
+  .price span { font-size: 13px; font-weight: 400; color: #888; }
+
+  .save {
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-weight: 500;
+    margin-top: 4px;
+  }
+
+  .save-starter { background: #E1F5EE; color: #085041; }
+  .save-pro     { background: #EEEDFE; color: #3C3489; }
+  .save-full    { background: #FAECE7; color: #712B13; }
+
+  .features {
+    list-style: disc;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    flex: 1;
+  }
+
+  .features li {
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+  }
+
+
+  .perfect {
+    font-size: 12px;
+    color: #888;
+    font-style: italic;
+  }
+
+  .cta {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;
+    text-decoration: none;
+  }
+
+  .cta-starter { background: #8aff8e; color: #085041; }
+  .cta-starter:hover { background: #327434; }
+
+  .cta-pro { background: #4979fc; color: #fff; }
+  .cta-pro:hover { background: #052b92; }
+
+  .cta-full { background: #FAECE7; color: #712B13; }
+  .cta-full:hover { background: #F5C4B3; }
+</style>
+</head>
+<body>
+
+<div class="cards-wrap">
+
+  <!-- Card 1: Starter -->
+  <div class="card">
+    <div>
+      <p class="card-title">Starter Growth Bundle</p>
+      <p class="card-sub">Social Media Basic + Email Marketing</p>
+    </div>
+    <hr class="divider">
+    <div>
+      <p class="price">$130 <span>/ month</span></p>
+      <span class="save save-starter"> Save $10</span>
+    </div>
+    <ul class="features">
+      <li>Social Media Basic package</li>
+      <li>Email Marketing included</li>
+      <li>Build consistency from day one</li>
+    </ul>
+    <p class="perfect">Perfect for new businesses ready to grow.</p>
+    <a href="#" class="cta cta-starter">Get Started</a>
+  </div>
+
+  <!-- Card 2: Pro (Featured) -->
+  <div class="card featured">
+    <span class="badge"> Most Popular</span>
+    
+    <div>
+      <p class="card-title">Pro Growth Bundle</p>
+      <p class="card-sub">Social Media Pro + Email Marketing</p>
+    </div>
+    <hr class="divider">
+    <div>
+      <p class="price">$155 <span>/ month</span></p>
+      <span class="save save-pro"> Save $15</span>
+    </div>
+    <ul class="features">
+      <li>Social Media Pro package</li>
+      <li>Email Marketing included</li>
+      <li>Drive real sales & engagement</li>
+    </ul>
+    <p class="perfect">Recommended for businesses ready to scale.</p>
+    <a href="#" class="cta cta-pro">Get Started</a>
+  </div>
+
+  <!-- Card 3: Full -->
+  <div class="card">
+    <div>
+      <p class="card-title">Full Digital Growth Bundle</p>
+      <p class="card-sub">Social Media Premium + Email + Google Business</p>
+    </div>
+    <hr class="divider">
+    <div>
+      <p class="price">$230 <span>/ month</span></p>
+      <span class="save save-full"> Save $71</span>
+    </div>
+    <ul class="features">
+      <li>Social Media Premium package</li>
+      <li>Email Marketing included</li>
+      <li>Google Business Optimization</li>
+      <li>Branding, content, leads & visibility</li>
+    </ul>
+    <p class="perfect">Complete solution for maximum digital reach.</p>
+    <a href="#" class="cta cta-full">Get Started</a>
+  </div>
+
+</div>
+
+</body>
+</html>
