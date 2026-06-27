@@ -163,7 +163,7 @@
   ═══════════════════════════════════════════════════════════════ */
   .msn-hero {
     background: var(--navy);
-    padding: 80px 24px 0;
+    padding: 80px 24px;
     overflow: hidden;
     position: relative;
   }
@@ -667,7 +667,7 @@
   ═══════════════════════════════════════════════════════════════ */
   .msn-closing {
     background: linear-gradient(135deg, var(--primary) 0%, var(--navy-mid) 100%);
-    padding: 100px 24px;
+    padding: 80px 24px;
     text-align: center;
     position: relative;
     overflow: hidden;
